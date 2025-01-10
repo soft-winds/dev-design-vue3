@@ -1,0 +1,170 @@
+.devui-button{
+    --dev-ui-button-height: 32px;
+    --dev-ui-button-padding: 4px 15px;
+    --dev-ui-button-font-size: var(--devui-font-size);
+    --dev-ui-button-font-family: var(--devui-font-family);
+    --dev-ui-button-color-bg:var(--devui-white-color);
+    --dev-ui-button-color-bg-hover:var(--devui-white-color);
+    --dev-ui-button-color-bg-active:var(--devui-white-color);
+    --dev-ui-button-color-text:var(--devui-color-text);
+    --dev-ui-button-color-text-hover:var(--devui-primary-color-hover);
+    --dev-ui-button-color-text-active:var(--devui-primary-color-active);
+    --dev-ui-button-color-border:var(--devui-border-color);
+    --dev-ui-button-color-border-hover:var(--devui-primary-color-hover);
+    --dev-ui-button-color-border-active:var(--devui-primary-color-active);
+    --dev-ui-button-style-border:var(--devui-border-style);
+    --dev-ui-button-radius:var(--devui-border-radius);
+}
+.is-danger{
+    --dev-ui-button-color-text:var(--devui-danger-color);
+    --dev-ui-button-color-text-hover:var(--devui-danger-color-hover);
+    --dev-ui-button-color-text-active:var(--devui-danger-color-active);
+    --dev-ui-button-color-border:var(--devui-danger-color);
+    --dev-ui-button-color-border-hover:var(--devui-danger-color-hover);
+    --dev-ui-button-color-border-active:var(--devui-danger-color-active);
+   
+}
+.is-ghost{
+    --dev-ui-button-color-bg:transparent;
+    --dev-ui-button-color-bg-hover:transparent;
+    --dev-ui-button-color-bg-active:transparent;
+    --dev-ui-button-color-text:var(--devui-white-color);
+    --dev-ui-button-color-border:var(--devui-white-color);
+
+}
+.is-round{
+    --dev-ui-button-radius: 32px;
+}
+.is-circle{
+    --dev-ui-button-radius: 50%;
+    --dev-ui-button-padding: 0;
+    min-width: 32px;
+}
+.devui-button[disabled].is-disabled,.devui-button[disabled].devui-button-primary.is-disabled{
+    --dev-ui-button-color-text:rgba(0, 0, 0, 0.25);
+    --dev-ui-button-color-border:var(--devui-border-color);
+    --dev-ui-button-color-bg:var(--devui-color-disabled);
+
+
+}
+.devui-button[disabled]{
+    cursor: not-allowed;
+}
+.devui-button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    border-width: 1px;
+    user-select: none;
+    padding: var(--dev-ui-button-padding);
+    height: var(--dev-ui-button-height);
+    font-family: var(--dev-ui-button-font-family);
+    font-size: var(--dev-ui-button-font-size);
+    background-color: var(--dev-ui-button-color-bg);
+    color: var(--dev-ui-button-color-text);
+    border-color: var(--dev-ui-button-color-border);
+    border-style: var(--dev-ui-button-style-border);
+    border-radius: var(--dev-ui-button-radius);
+    transform: all var(--devui-transition-duration);
+    &:not(:disabled){
+        &:hover{
+            border-color:var(--dev-ui-button-color-border-hover);
+            background-color: var(--dev-ui-button-color-bg-hover);
+            color: var(--dev-ui-button-color-text-hover);
+        }
+        &:active{
+            border-color:var(--dev-ui-button-color-border-active);
+            background-color: var(--dev-ui-button-color-bg-active);
+            color: var(--dev-ui-button-color-text-active);
+        }
+    }
+    &.devui-button-primary{
+        --dev-ui-button-color-bg:var(--devui-primary-color);
+        --dev-ui-button-color-bg-hover:var(--devui-primary-color-hover);
+        --dev-ui-button-color-bg-active:var(--devui-primary-color-active);
+        --dev-ui-button-color-text:var(--devui-white-color);
+        --dev-ui-button-color-text-hover:var(--devui-white-color);
+        --dev-ui-button-color-text-active:var(--devui-white-color);
+        --dev-ui-button-color-border:var(--devui-primary-color);
+        --dev-ui-button-color-border-hover:var(--devui-primary-color-hover);
+        --dev-ui-button-color-border-active:var(--devui-primary-color-active);
+        &.is-danger{
+            --dev-ui-button-color-bg:var(--devui-danger-color);
+            --dev-ui-button-color-bg-hover:var(--devui-danger-color-hover);
+            --dev-ui-button-color-bg-active:var(--devui-danger-color-active);
+            --dev-ui-button-color-text:var(--devui-white-color);
+            --dev-ui-button-color-text-hover:var(--devui-white-color);
+            --dev-ui-button-color-text-active:var(--devui-white-color);
+            --dev-ui-button-color-border:var(--devui-danger-color);
+            --dev-ui-button-color-border-hover:var(--devui-danger-color-hover);
+            --dev-ui-button-color-border-active:var(--devui-danger-color-active);
+            &.is-ghost{
+                --dev-ui-button-color-text:var(--devui-danger-color);
+                --dev-ui-button-color-text-hover:var(--devui-danger-color-hover);
+                --dev-ui-button-color-text-active:var(--devui-danger-color-active);
+            }
+        }
+        &.is-ghost{
+            --dev-ui-button-color-bg:transparent;
+            --dev-ui-button-color-bg-hover:transparent;
+            --dev-ui-button-color-bg-active:transparent;
+            --dev-ui-button-color-text:var(--devui-primary-color);
+            --dev-ui-button-color-text-hover:var(--devui-primary-color-hover);
+            --dev-ui-button-color-text-active:var(--devui-primary-color-active);
+        }
+        
+    }
+    &.devui-button-dashed{
+        --dev-ui-button-style-border:dashed;
+    }
+    &.devui-button-text,&.devui-button-link{
+        --dev-ui-button-color-bg:transparent;
+        border: none;
+        &:not(:disabled){
+            &.is-danger{
+                --dev-ui-button-color-text:var(--devui-danger-color);
+            }
+        }
+        &.is-disabled{
+          --dev-ui-button-color-bg:transparent;
+        }
+    }
+    &.devui-button-text{
+        --dev-ui-button-color-text:var(--devui-color-text);
+        --dev-ui-button-color-text-hover:var(--devui-color-text);
+        --dev-ui-button-color-text-active:var(--devui-color-text);
+        --dev-ui-button-color-bg-hover:var(--devui-color-disabled);
+        --dev-ui-button-color-bg-active:var(--devui-color-disabled);
+        &:not(:disabled){
+            &.is-danger{
+                --dev-ui-button-color-text-hover:var(--devui-danger-color);
+                --dev-ui-button-color-text-active:var(--devui-danger-color);
+                --dev-ui-button-color-bg-hover:var(--devui-danger-color-light);
+                --dev-ui-button-color-bg-active:var(--devui-danger-color-light);
+            }
+        }
+       
+    }
+    &.devui-button-link{
+        --dev-ui-button-color-text:var(--devui-primary-color);
+       
+    }
+   &.devui-button-small{
+    --dev-ui-button-padding:0 7px;
+    --dev-ui-button-height:24px;
+    --dev-ui-button-radius:4px;
+   }
+   &.devui-button-large{
+    --dev-ui-button-padding:6.428571428571429px 15px;
+    --dev-ui-button-height:40px;
+    --dev-ui-button-radius:8px;
+    --dev-ui-button-font-size:16px;
+   }
+   
+}
+

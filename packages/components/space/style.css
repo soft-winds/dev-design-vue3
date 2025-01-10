@@ -1,0 +1,26 @@
+.devui-space {
+    box-sizing: border-box;
+    display: flex;
+    &.is-wrap {
+      flex-wrap: wrap;
+    }
+    /* align-items: center; */
+    &.is-inline {
+      display: inline-flex;
+      & + & {
+        margin-left: 10px;
+      }
+    }
+    &.is-vertical {
+      flex-direction: column;
+      .d-space__item {
+        margin: 0 5px;
+      }
+    }
+    &.is-horizontal {
+      flex-direction: row;
+      .d-space__item {
+        margin: 5px 0px;
+      }
+    }
+  }

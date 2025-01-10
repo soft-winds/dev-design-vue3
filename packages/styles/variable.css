@@ -1,0 +1,21 @@
+:root{
+    --devui-white-color: #fff;
+    --devui-black-color: #000;
+    --devui-primary-color: #1677FF;
+    --devui-primary-color-hover: #4096ff;
+    --devui-primary-color-active: #0958d9;
+    --devui-danger-color: #ff4d4f;
+    --devui-danger-color-hover: #ff7875;
+    --devui-danger-color-active: #d9363e;
+    --devui-danger-color-light:#fff2f0;
+    --devui-color-disabled: rgba(0, 0, 0, 0.04);
+    --devui-color-text:rgba(0, 0, 0, 0.88);
+    --devui-transition-duration: 0.2s;
+    --devui-border-color:#d9d9d9;
+    --devui-border-radius: 6px;
+    --devui-border-style:solid;
+    --devui-disabled-color: rgba(0, 0, 0, 0.04);
+    --devui-font-size:14px;
+    --devui-font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+}
